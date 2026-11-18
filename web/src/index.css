@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default, light;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-accent: #e95420;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: false;
+  --color-accent: #e95420;
+}
+
+:root {
+  --navbar-bg: #171717;
+  --accent: #e95420;
+  --accent-bg: rgba(233, 84, 32, 0.1);
+  --accent-border: rgba(233, 84, 32, 0.5);
+}
+
+.brand-surface {
+  color: #fff;
+  background-color: var(--navbar-bg);
+}
+
+.brand-surface .brand-icon-button,
+.brand-surface .brand-icon-button:hover,
+.brand-surface .brand-icon-button:active,
+.brand-surface .brand-icon-button:focus-visible {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.brand-surface .brand-icon-button:hover {
+  color: var(--accent);
+}
+
+.brand-surface .navbar-theme-toggle .toggle {
+  color: var(--accent);
+  background-color: #171717;
+  border-color: #555;
+}
+
+.brand-surface .brand-icon-button svg,
+.brand-surface .navbar-theme-toggle svg {
+  transition: color 150ms ease;
+}
+
+.brand-surface .navbar-menu {
+  color: #fff;
+  background-color: #171717;
+}
+
+.brand-surface .navbar-menu-item {
+  color: inherit;
+}
+
+.brand-surface .navbar-menu-item:hover {
+  color: var(--accent);
+  background-color: transparent;
+}
+
+.brand-surface .navbar-menu-item svg {
+  transition: color 150ms ease;
+}
+
+.brand-surface .navbar-theme-toggle {
+  cursor: pointer;
+}
+
+.brand-surface .navbar-menu .navbar-theme-row > .navbar-theme-toggle,
+.brand-surface .navbar-menu .navbar-theme-row > .navbar-theme-toggle:hover {
+  background-color: transparent;
+  color: #fff;
+  min-height: 0;
+  padding: 0.25rem 0.5rem;
+}
+
+

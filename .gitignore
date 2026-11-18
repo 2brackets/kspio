@@ -1,0 +1,21 @@
+# Java
+**/target/
+*.class
+
+# Node
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
