@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: core
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/sendhush}
+    username: ${DB_USERNAME:sendhush}
+    password: ${DB_PASSWORD:admin}
+
+app:
+  version: ${APP_VERSION:1.0.0}
+  description: Core application configuration
+  auth:
+    mode: ${AUTH_MODE:local}

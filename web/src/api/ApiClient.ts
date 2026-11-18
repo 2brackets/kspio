@@ -16,7 +16,7 @@ export class ApiError extends Error {
 export class ApiClient {
   private readonly baseUrl: string
 
-  constructor(baseUrl = '/api') {
+  constructor(baseUrl = '') {
     this.baseUrl = baseUrl.replace(/\/+$/, '')
   }
 
